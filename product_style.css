@@ -1,0 +1,476 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    font-family: "Cabin", Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 192em;
+    margin: auto;
+}
+
+
+/*HEADER STARTS*/
+
+#header__main-nav {
+    text-align: center;
+}
+
+.header__top-add {
+    text-align: center;
+    background-color: #BB2000;
+    padding: 1.3em;
+}
+
+.header__top-add a i {
+    font-size: 1.3em;
+}
+
+.--bolder {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+ul.category li {
+    position: static;
+    align-self: center;
+}
+
+div.header__categories--extended {
+    background-color: white;
+    padding: 3em 0em;
+    border-top: 0.3em black solid;
+    position: fixed;
+}
+
+li.category a span:hover {
+    background-color: #231F20;
+    color: white;
+}
+
+.header__categories {
+    font-size: 1.5em;
+    text-align: left;
+    font-weight: bold;
+}
+
+.header__categories li {
+    font-weight: normal;
+    width: 100%;
+    margin-left: -3em;
+    right: 0em;
+    padding: 0.5em 0em 0.5em 0em;
+    list-style-type: none;
+}
+
+.category div.header__categories--extended {
+    display: none;
+}
+
+.category:hover div.header__categories--extended {
+    z-index: 100;
+    display: flex;
+    position: absolute;
+    left: 0em;
+}
+
+.header__categories li a:hover {
+    display: block;
+    background-color: #231F20;
+    color: white;
+}
+
+.checkbtn {
+    color: black;
+    float: right;
+    margin-right: 4em;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+/*CONTENT STARTS*/
+
+#content {
+    width: 97%;
+    margin: 3em auto;
+    align-self: center;
+}
+
+#content__product-name {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#content__product-name div:first-child {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#content__instagram div {
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: .4em;
+    text-transform: uppercase;
+}
+
+#content__instagram div i {
+    font-size: 1.5em;
+}
+
+
+/*FOOTER*/
+
+footer {
+    color: white;
+}
+
+footer li a {
+    font-weight: normal;
+    color: inherit;
+    width: 100%;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+#footer__discount {
+    padding: 1em 0em 0em 0em;
+    background-color: #F5F5F5;
+    border-radius: 0.6em;
+}
+
+#footer__discount div {
+    width: 95%;
+    margin: auto;
+    padding: 1em 0em 0.3em 0em;
+    text-align: center;
+    letter-spacing: 0.35em;
+    color: black;
+    font-size: 2em;
+}
+
+#footer__discount div#newsletter {
+    padding: 0em 0em 0.3em 0em;
+    letter-spacing: normal;
+}
+
+#footer__discount div button {
+    padding: 1em 2.5em;
+    margin-bottom: 3em;
+    font-weight: bold;
+    border: none;
+}
+
+#footer__discount div button a {
+    text-decoration: none;
+    font-size: 1.3em;
+    border: none;
+}
+
+#footer__menu {
+    width: 100%;
+    text-align: center;
+    border-radius: 0.6em;
+}
+
+.footer__menu--width {
+    width: 80%;
+    margin: auto;
+}
+
+.footer__menu--untoggle {
+    padding: 1em 0em;
+    letter-spacing: 0.15em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 100%;
+    padding-top: 1.3em;
+}
+
+.footer__ul {
+    list-style-type: none;
+    padding-top: 0.9em;
+}
+
+.footer__ul li a {
+    display: block;
+    text-align: center;
+    padding-top: 1.3em;
+    font-size: 1.3em;
+    width: 100%;
+    /*przy zmianie z "13px" na "1.3em" czcionka przybiera zbyt duże rozmiary, czemu?? (znaleźć problem)*/
+}
+
+.footer__ul--toggled {
+    display: none;
+}
+
+#footer__icons {
+    width: 80%;
+    margin: auto;
+    color: black;
+}
+
+#footer__icons div {
+    padding: 1em 2em;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+
+/*FOOTER ENDS*/
+
+
+/*GENERAL STYLES*/
+
+.list--inline {
+    list-style-type: none;
+}
+
+.list--inline li {
+    display: inline-block;
+}
+
+.list--inline li a {
+    text-decoration: none;
+    padding: 0em 2em;
+    font-size: 1.5em;
+}
+
+.bg--black {
+    background-color: #231F20;
+}
+
+.li__c--white a {
+    color: white;
+}
+
+.li__c--black li a {
+    color: black;
+    text-decoration: none;
+}
+
+#sale {
+    color: #BB2000;
+}
+
+#fb {
+    color: #3A559F;
+}
+
+ul li a.all {
+    text-decoration: underline;
+}
+
+
+/*12 COLUMNS CLASSES*/
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+[class^='col-'] {
+    position: relative;
+    width: 100%;
+    min-height: 0.1em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+.col-1 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 8.33333333%;
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
+}
+
+.col-2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16.66666667%;
+    flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
+}
+
+.col-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333333%;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
+}
+
+.col-5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 41.66666667%;
+    flex: 0 0 41.66666667%;
+    max-width: 41.66666667%;
+}
+
+.col-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 58.33333333%;
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
+}
+
+.col-8 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.66666667%;
+    flex: 0 0 66.66666667%;
+    max-width: 66.66666667%;
+}
+
+.col-9 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-10 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.33333333%;
+    flex: 0 0 83.33333333%;
+    max-width: 83.33333333%;
+}
+
+.col-11 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 91.66666667%;
+    flex: 0 0 91.66666667%;
+    max-width: 91.66666667%;
+}
+
+.col-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 980px) {
+    .footer__ul--toggled {
+        display: block;
+    }
+    .col-md-1 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.33333333%;
+        flex: 0 0 8.33333333%;
+        max-width: 8.33333333%;
+    }
+    .col-md-2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.66666667%;
+        flex: 0 0 16.66666667%;
+        max-width: 16.66666667%;
+    }
+    .col-md-3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-md-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333333%;
+        flex: 0 0 33.33333333%;
+        max-width: 33.33333333%;
+    }
+    .col-md-5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.66666667%;
+        flex: 0 0 41.66666667%;
+        max-width: 41.66666667%;
+    }
+    .col-md-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-md-7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.33333333%;
+        flex: 0 0 58.33333333%;
+        max-width: 58.33333333%;
+    }
+    .col-md-8 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66666667%;
+        flex: 0 0 66.66666667%;
+        max-width: 66.66666667%;
+    }
+    .col-md-9 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-md-10 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.33333333%;
+        flex: 0 0 83.33333333%;
+        max-width: 83.33333333%;
+    }
+    .col-md-11 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.66666667%;
+        flex: 0 0 91.66666667%;
+        max-width: 91.66666667%;
+    }
+    .col-md-12 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width:980px) {
+    .checkbtn {
+        display: block;
+    }
+    ul.header__categories {
+        width: 100%;
+        text-align: center;
+    }
+}
