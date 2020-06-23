@@ -1,6 +1,14 @@
 //      DZIAŁA NA TWARDO, ALE JAK ZROBIĆ POJEDYNCZO...
-var divFooter = document.getElementsByClassName("footer__menu--untoggle"); //div, którzy trzeba kliknąć
-var ulsFooter = document.querySelectorAll(".footer__ul--toggled"); //zbiór list
+var divFooter = document.getElementsByClassName("footer__menu--untoggle"); //div to click on
+var ulsFooter = document.querySelectorAll(".footer__ul--toggled");
+var screenWidth = screen.width;
+var x = 0;
+
+if (screenWidth < 980) {
+    x = 1;
+} else {
+    x = 3;
+}
 
 for (let i = 0; i < divFooter.length; i++) {
     divFooter[i].addEventListener("click", function() {
@@ -12,6 +20,6 @@ for (let i = 0; i < divFooter.length; i++) {
 
 $('.content__instagram--slider').slick({
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: x,
     slidesToScroll: 1
 });
