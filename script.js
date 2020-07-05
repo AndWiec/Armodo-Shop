@@ -9,7 +9,6 @@ if (screenWidth < 980) {
 } else {
     x = 3;
 }
-
 for (let i = 0; i < divFooter.length; i++) {
     divFooter[i].addEventListener("click", function() {
         ulsFooter[i].classList.toggle("footer__ul--toggled");
