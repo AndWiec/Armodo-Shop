@@ -226,7 +226,6 @@ footer li a {
     padding-top: 1.3em;
     font-size: 1.3em;
     width: 100%;
-    /*przy zmianie z "13px" na "1.3em" czcionka przybiera zbyt duże rozmiary, czemu?? (znaleźć problem)*/
 }
 
 .footer__ul--toggled {
